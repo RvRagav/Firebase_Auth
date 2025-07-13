@@ -30,10 +30,52 @@ export const Login = () => {
     }
     return (
         <>
-            <div>Login</div>
-            <button onClick={handleLogin}>Continue with Google</button>
-            <p>Don't have an account? <a href="/signup">Sign Up</a></p>
-            <p>Forgot your password? <a href="/reset-password">Reset Password</a></p>
-        </>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '60vh',
+                color: "White",
+                borderRadius: '16px',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.08)',
+                padding: '40px 24px',
+                maxWidth: '350px',
+                margin: '40px auto'
+            }}>
+                <h2 style={{ marginBottom: '24px', color: 'white', fontWeight: 700 }}>Login</h2>
+                <button
+                    onClick={handleLogin}
+                    style={{
+                        background: '#4285F4',
+                        color: '#fff',
+                        border: 'none',
+                        borderRadius: '6px',
+                        padding: '12px 24px',
+                        fontSize: '16px',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        marginBottom: '20px',
+                        boxShadow: '0 2px 8px rgba(66,133,244,0.15)',
+                        transition: 'background 0.2s'
+                    }}
+                    onMouseOver={e => (e.currentTarget.style.background = '#357ae8')}
+                    onMouseOut={e => (e.currentTarget.style.background = '#4285F4')}
+                >
+                    Continue with Google
+                </button>
+                <p style={{ margin: '8px 0', color: 'white' }}>
+                    Don't have an account?{' '}
+                    <a href="/signup" style={{ color: '#4285F4', textDecoration: 'none', fontWeight: 500 }}>
+                        Sign Up
+                    </a>
+                </p>
+                <p style={{ margin: '8px 0', color: 'white' }}>
+                    Forgot your password?{' '}
+                    <a href="/reset-password" style={{ color: '#4285F4', textDecoration: 'none', fontWeight: 500 }}>
+                        Reset Password
+                    </a>
+                </p>
+            </div></>
     )
 }

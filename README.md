@@ -44,7 +44,7 @@ This project demonstrates how to implement Google Authentication in a React appl
 5. **Run the app**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## File Structure
@@ -65,4 +65,4 @@ This project demonstrates how to implement Google Authentication in a React appl
 
 ## License
 
-This project is for
+This project is for educational purposes.

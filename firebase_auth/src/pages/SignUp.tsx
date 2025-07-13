@@ -17,22 +17,39 @@ const SignUp = () => {
     };
     return (
         <>
-            <div>SignUp</div>
-            <form onSubmit={handleSignUp}>
+            <div style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "1rem" }}>SignUp</div>
+            <form onSubmit={handleSignUp} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem", maxWidth: "300px", margin: "0 auto" }}>
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    style={{ padding: "0.5rem", width: "100%", borderRadius: "4px", border: "1px solid #ccc" }}
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    style={{ padding: "0.5rem", width: "100%", borderRadius: "4px", border: "1px solid #ccc" }}
                 />
-                <button type="submit">Sign Up</button>
-                <p>Already have an account? <a href="/login">Login</a></p>
+                <button
+                    type="submit"
+                    style={{
+                        padding: "0.5rem 1rem",
+                        backgroundColor: "#1976d2",
+                        color: "#fff",
+                        border: "none",
+                        borderRadius: "4px",
+                        cursor: "pointer",
+                        fontWeight: "bold"
+                    }}
+                >
+                    Sign Up
+                </button>
+                <p style={{ fontSize: "0.9rem" }}>
+                    Already have an account? <a href="/login" style={{ color: "#1976d2", textDecoration: "underline" }}>Login</a>
+                </p>
             </form>
         </>
     )
