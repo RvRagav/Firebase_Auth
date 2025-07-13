@@ -54,7 +54,7 @@ This project demonstrates how to implement Google Authentication in a React appl
 
 ## Usage
 
-- Open [http://localhost:3000](http://localhost:3000) in your browser.
+- Open [http://localhost:5173](http://localhost:5173) in your browser.
 - Click **Continue with Google** to sign in.
 - On successful login, you will be redirected to the profile page.
 
